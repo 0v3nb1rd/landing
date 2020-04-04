@@ -1,0 +1,33 @@
+.effect {
+  position: relative;
+  height: 280px;
+  background: url(../../images/dest/effect.png) no-repeat 50% 0px;
+  padding: 20px 5px 10px 450px;
+  &__title {
+    // display: inline-block;
+    color: #d01414;
+    font-size: 48px;
+    line-height: 52px;
+    font-weight: 800;
+    text-transform: uppercase;
+  }
+  &__description {
+    // display: inline-block;
+    font-size: 18px;
+    line-height: 25px;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-style: italic;
+    color: #4c1358;
+  }
+  &__footer {
+    position: absolute;
+    top: 210px;
+    left: 470px;
+    width: 380px;
+    margin-left: 10px;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 18px;
+    line-height: 25px;
+    font-style: italic;
+  }
+}
