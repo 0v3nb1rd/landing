@@ -1,0 +1,26 @@
+.kiss {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  height: 1050px;
+  padding: 25px 60px;
+  background: url(../../images/dest/kis.png) no-repeat center;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-style: italic;
+  font-size: 18px;
+  line-height: 25px;
+  &__content {
+    width: 580px;
+    height: 380px;
+    margin-top: 25px;
+    margin-left: 25px;
+    margin-right: 25px;
+    color: $textaccent;
+  }
+  &__footer {
+    width: 650px;
+    p {
+      margin: 0;
+    }
+  }
+}
