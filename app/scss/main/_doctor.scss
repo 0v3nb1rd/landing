@@ -1,0 +1,23 @@
+.doctor {
+  height: 470px;
+  margin: -470px 0 0 60px;
+  padding-top: 80px;
+
+  background: url(../../images/dest/doctor.png) no-repeat top right;
+  &__title {
+    margin-bottom: 20px;
+    font-size: 48px;
+    font-weight: 800;
+    text-transform: uppercase;
+    line-height: 52px;
+    color: $accent;
+  }
+  &__text {
+    width: 620px;
+    margin-left: 10px;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-style: italic;
+    font-size: 17px;
+    line-height: 25px;
+  }
+}
