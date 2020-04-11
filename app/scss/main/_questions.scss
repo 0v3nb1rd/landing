@@ -1,0 +1,39 @@
+.questions {
+  height: 825px;
+  background: url(../../images/dest/blue.png) no-repeat center;
+  &__list {
+    padding-left: 70px;
+    padding-right: 70px;
+  }
+  &__item {
+    // border: 1px solid #000;
+    &--first {
+      height: 169px;
+      padding: 14px 70px 2px 200px;
+    }
+    &--second {
+      height: 194px;
+      padding: 14px 250px 2px 20px;
+    }
+    &--third {
+      height: 318px;
+      padding: 14px 75px 2px 197px;
+    }
+    &--fourth {
+      height: 145px;
+      padding: 14px 250px 2px 20px;
+    }
+  }
+  &__title {
+    font-size: 33px;
+    line-height: 38px;
+    text-transform: uppercase;
+    font-weight: 800;
+  }
+  &__text {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 18px;
+    line-height: 25px;
+    font-style: italic;
+  }
+}

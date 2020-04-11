@@ -1,8 +1,10 @@
 .doctor {
   height: 470px;
-  margin: -470px 0 0 60px;
+  padding: -470px;
+  margin-top: -470px;
+  margin-bottom: 0;
   padding-top: 80px;
-
+  padding-left: 60px;
   background: url(../../images/dest/doctor.png) no-repeat top right;
   &__title {
     margin-bottom: 20px;
