@@ -1,12 +1,12 @@
 .questions {
   height: 825px;
+  margin-bottom: 0;
   background: url(../../images/dest/blue.png) no-repeat center;
   &__list {
     padding-left: 70px;
     padding-right: 70px;
   }
   &__item {
-    // border: 1px solid #000;
     &--first {
       height: 169px;
       padding: 14px 70px 2px 200px;

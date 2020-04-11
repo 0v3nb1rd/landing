@@ -1,0 +1,21 @@
+.call {
+  height: 350px;
+  margin-bottom: 0;
+  background: url(../../images/dest/call.png) no-repeat 50% 0px;
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 180px;
+    padding-left: 120px;
+    padding-right: 120px;
+  }
+  &__item {
+    width: 180px;
+    margin: 5px 20px 10px;
+    text-align: center;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 18px;
+    line-height: 25px;
+    font-style: italic;
+  }
+}
