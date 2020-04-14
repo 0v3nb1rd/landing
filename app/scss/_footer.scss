@@ -1,0 +1,39 @@
+.footer {
+  padding-top: 45px;
+  padding-bottom: 20px;
+  background: url(../images/dest/bg_dn.png);
+  &__wrapper {
+    width: 430px;
+    margin: 0 auto;
+  }
+  h2 {
+    margin-bottom: 15px;
+    font-size: 25px;
+    line-height: 27px;
+    font-weight: 500;
+  }
+  input[type="text"],
+  textarea {
+    width: 100%;
+    padding: 5px;
+    background: #f8f8f8;
+    border: 1px solid $textlabel;
+    border-radius: 4px;
+  }
+  textarea {
+    margin-top: 10px;
+    resize: none;
+  }
+  ::selection {
+    background-color: $textaccent;
+  }
+  &__text {
+    margin-top: 30px;
+    font-size: 12px;
+    color: #b3feff;
+    text-align: center;
+    p {
+      margin: 0;
+    }
+  }
+}

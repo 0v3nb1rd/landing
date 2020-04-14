@@ -1,0 +1,31 @@
+.form {
+  margin-top: 70px;
+  &__item {
+    label {
+      width: 195px;
+      text-align: right;
+      font-family: Georgia, "Times New Roman", Times, serif;
+      color: $textlabel;
+      font-style: italic;
+      font-size: 18px;
+      line-height: 35px;
+    }
+    input[type="text"],
+    input[type="number"] {
+      width: 250px;
+      padding: 0 10px;
+      color: #444;
+      border: $textlabel 1px solid;
+      border-radius: 4px;
+      line-height: 35px;
+      background: #f8f8f8;
+    }
+  }
+  &__btn {
+    margin-top: 35px;
+    margin-left: -25px;
+  }
+  ::selection {
+    background-color: $textaccent;
+  }
+}

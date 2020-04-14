@@ -2,6 +2,7 @@
 $bodybg: #e63959; // background Color
 $textcolor: #fff; // Text Color
 $textaccent: #4c1358;
+$textlabel: #3554fb;
 
 $accent: #ff0; // Accent Color
 $fontsize: 16px; // Body Font Size
@@ -88,4 +89,24 @@ body {
 
 section {
   margin-bottom: 50px;
+}
+.btn {
+  display: inline-block;
+  width: 220px;
+  order: 1;
+  color: #fff;
+  background-color: #3ec300;
+  font-size: 28px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  height: 50px;
+  line-height: 50px;
+  text-decoration: none;
+  outline-width: medium;
+  border-right: medium none;
+  border-top: medium none;
+  border-left: medium none;
+  border-bottom: medium none;
+  border-radius: 25px;
 }
