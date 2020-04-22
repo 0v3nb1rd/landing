@@ -2,9 +2,10 @@
   position: relative;
   height: 280px;
   background: url(../../images/dest/effect.png) no-repeat 50% 0px;
+  background-position: top;
+  background-size: contain;
   padding: 20px 60px 10px 450px;
   &__title {
-    // display: inline-block;
     color: #d01414;
     font-size: 48px;
     line-height: 52px;
@@ -12,7 +13,6 @@
     text-transform: uppercase;
   }
   &__description {
-    // display: inline-block;
     font-size: 18px;
     line-height: 25px;
     font-family: Georgia, "Times New Roman", Times, serif;
@@ -29,5 +29,89 @@
     font-size: 18px;
     line-height: 25px;
     font-style: italic;
+  }
+}
+
+@media (max-width: 1199.98px) {
+  .effect {
+    padding: 20px 30px 10px 385px;
+    &__title {
+      font-size: 40px;
+      line-height: 40px;
+    }
+    &__footer {
+      top: 200px;
+      left: 400px;
+    }
+  }
+}
+
+@media (max-width: 991.98px) {
+  .effect {
+    height: 220px;
+    margin-bottom: 20px;
+    padding: 5px 20px 5px 290px;
+    &__title {
+      font-size: 35px;
+      line-height: 35px;
+    }
+    &__description {
+      font-size: 16px;
+      line-height: 17px;
+    }
+    &__footer {
+      top: 145px;
+      left: 290px;
+      padding-right: 80px;
+      font-size: 16px;
+      line-height: 22px;
+    }
+  }
+}
+
+@media (max-width: 767.98px) {
+  .effect {
+    height: 160px;
+    padding: 5px 15px 5px 215px;
+    &__title {
+      margin-bottom: 5px;
+      font-size: 27px;
+      line-height: 27px;
+    }
+    &__description {
+      font-size: 12px;
+      line-height: 13px;
+    }
+    &__footer {
+      top: 110px;
+      left: 210px;
+      width: auto;
+      padding-right: 40px;
+      margin-left: 8px;
+      font-size: 14px;
+      line-height: 16px;
+    }
+  }
+}
+
+@media (max-width: 575.98px) {
+  .effect {
+    margin-bottom: 10px;
+    padding: 2px 10px 2px 40%;
+    &__title {
+      font-size: 15px;
+      line-height: 18px;
+      margin-bottom: 2px;
+    }
+    &__description {
+      display: none;
+    }
+    &__footer {
+      position: static;
+      margin-left: 0;
+      padding-right: 10px;
+      font-size: 13px;
+      line-height: 20px;
+    }
   }
 }
