@@ -18,8 +18,6 @@ $gutter: $grid-gutter-width;
 @import "node_modules/bootstrap/scss/mixins/_breakpoints.scss"; // Bootstrap Breakpoints mixin
 @import "node_modules/bootstrap/scss/bootstrap-grid.scss"; // Optional Bootstrap Grid\@import "node_modules/simple-lightbox/dist/simpleLightbox.min";
 @import "node_modules/simple-lightbox/dist/simpleLightbox.min"; // Simple-Lightbox
-// @import "../../node_modules/swiper/css/swiper.min";
-// @import "node_modules/simple-lightbox/src/simpleLightbox.scss";
 // @import "node_modules/bootstrap/scss/buttons.scss"; // Bootstrap Buttons
 // @import 'node_modules/bootstrap/scss/utilities/_sizing.scss'; // Optional Bootstrap Utilites
 
@@ -78,9 +76,9 @@ li {
 
 body {
   position: relative;
-  min-width: 320px;
+  min-width: 375px;
   color: $textcolor;
-  background: url(../images/dest/body.jpg) no-repeat 50% 0;
+  background: url(../images/dest/body.jpg) no-repeat center top;
   background-color: $bodybg;
   // font-family: $roboto;
   font-family: Tahoma;
@@ -91,26 +89,26 @@ body {
 
 @media (max-width: 1199.98px) {
   body {
-    background-size: 1500px;
+    background-size: 1400px;
   }
 }
 @media (max-width: 991.98px) {
   body {
-    // background-position: center top;
-    background-size: 1200px;
+    background-size: 1100px;
   }
 }
 @media (max-width: 767.98px) {
   body {
-    background-position: top center;
-    background-size: 950px;
+    background-size: 800px;
   }
 }
 @media (max-width: 575.98px) {
   body {
-    background-size: 1470px;
-    background-position: top center;
-    margin: 0 auto;
+    background-size: 2570px;
+    // background-size: cover;
+    // background-position: top center;
+    background-position: 47% 0;
+    // margin: 0 auto;
   }
 }
 
