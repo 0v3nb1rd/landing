@@ -10,6 +10,19 @@
       font-size: 18px;
       line-height: 35px;
     }
+    .placeholder-hide::-webkit-input-placeholder {
+      color: transparent;
+    }
+    .placeholder-hide::-moz-placeholder {
+      color: transparent;
+    }
+    .placeholder-hide:-moz-placeholder {
+      color: transparent;
+    }
+    .placeholder-hide:-ms-input-placeholder {
+      color: transparent;
+    }
+
     input[type="text"],
     input[type="number"] {
       width: 250px;
@@ -27,5 +40,69 @@
   }
   ::selection {
     background-color: $textaccent;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .form {
+    margin: 0;
+    margin-top: 10px;
+    margin-right: 10px;
+    &__item {
+      label {
+        display: none;
+      }
+      input[type="text"],
+      input[type="number"] {
+        width: 100%;
+      }
+      .placeholder-hide::-webkit-input-placeholder {
+        color: inherit;
+      }
+      .placeholder-hide::-moz-placeholder {
+        color: inherit;
+      }
+      .placeholder-hide:-moz-placeholder {
+        color: inherit;
+      }
+      .placeholder-hide:-ms-input-placeholder {
+        color: inherit;
+      }
+    }
+    &__btn {
+      margin-top: 20px;
+      margin-left: 0;
+      height: auto;
+      width: 160px;
+      font-size: 24px;
+      line-height: 24px;
+      padding-top: 5px;
+      padding-bottom: 5px;
+    }
+  }
+}
+
+@media (max-width: 767.98px) {
+  .form {
+    position: relative;
+    margin-top: 12px;
+    margin-right: 7px;
+    &__btn {
+      position: absolute;
+      top: 52%;
+      right: 102%;
+      margin: 0;
+      font-size: 22px;
+      line-height: 22px;
+    }
+  }
+}
+
+@media (max-width: 575.98px) {
+  .form {
+    &__btn {
+      top: 70%;
+      left: -210px;
+    }
   }
 }
