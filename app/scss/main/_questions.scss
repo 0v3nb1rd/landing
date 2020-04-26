@@ -37,3 +37,144 @@
     font-style: italic;
   }
 }
+@media (max-width: 1199.98px) {
+  .questions {
+    height: 794px;
+    background-size: 1540px auto;
+    background-position: top;
+    &__item {
+      &--first {
+        height: 162px;
+        padding: 5px 50px 5px 230px;
+      }
+      &--second {
+        height: 187px;
+        padding: 5px 150px 5px 20px;
+      }
+      &--third {
+        height: 307px;
+        padding: 5px 50px 5px 230px;
+      }
+      &--fourth {
+        height: 138px;
+        padding: 5px 150px 5px 20px;
+      }
+    }
+    &__title {
+      margin-top: 5px;
+    }
+  }
+}
+
+@media (max-width: 991.98px) {
+  .questions {
+    height: 593px;
+    background-size: 1150px;
+    &__list {
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+    &__item {
+      &--first {
+        height: 121px;
+        padding: 5px 10px 5px 170px;
+      }
+      &--second {
+        height: 140px;
+        padding: 5px 70px 5px 20px;
+      }
+      &--third {
+        height: 230px;
+        padding: 5px 10px 5px 170px;
+      }
+      &--fourth {
+        height: 102px;
+        padding: 5px 70px 5px 20px;
+      }
+    }
+    &__title {
+      font-size: 30px;
+      line-height: 30px;
+    }
+    &__text {
+      font-size: 15px;
+      line-height: 16px;
+    }
+  }
+}
+
+@media (max-width: 767.98px) {
+  .questions {
+    height: 474px;
+    background-size: 920px;
+    &__list {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+    &__item {
+      &--first {
+        height: 96px;
+        padding: 2px 5px 2px 140px;
+      }
+      &--second {
+        height: 113px;
+        padding: 2px 55px 2px 5px;
+      }
+      &--third {
+        height: 183px;
+        padding: 2px 5px 2px 140px;
+      }
+      &--fourth {
+        height: 82px;
+      }
+    }
+    &__title {
+      margin-bottom: 2px;
+      font-size: 25px;
+      line-height: 25px;
+    }
+    &__text {
+      font-size: 14px;
+      line-height: 15px;
+    }
+  }
+}
+
+@media (max-width: 575.98px) {
+  .questions {
+    height: 460px;
+    background-size: 1500px;
+    &__list {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+    &__item {
+      padding-left: 5px;
+      padding-right: 5px;
+      // padding: 0;
+      &--first {
+        height: 105px;
+        // padding: 2px 5px 2px 140px;
+      }
+      &--second {
+        height: 120px;
+        //   padding: 2px 55px 2px 5px;
+      }
+      &--third {
+        height: 145px;
+        //   padding: 2px 5px 2px 140px;
+      }
+      // &--fourth {
+      //   height: 82px;
+      // }
+    }
+    &__title {
+      margin-bottom: 2px;
+      font-size: 22px;
+      line-height: 22px;
+    }
+    &__text {
+      line-height: 14px;
+    }
+  }
+}
