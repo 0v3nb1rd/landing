@@ -1,0 +1,115 @@
+.kiss {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  height: 1000px;
+  padding: 25px 60px 0 60px;
+  background: url(../../images/dest/kis.png) no-repeat center 10px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-style: italic;
+  font-size: 18px;
+  line-height: 25px;
+  margin-bottom: 0;
+  &__content {
+    width: 580px;
+    height: 390px;
+    margin-top: 25px;
+    // margin-left: 25px;
+    margin-right: 25px;
+    color: $textaccent;
+  }
+  &__footer {
+    width: 650px;
+    p {
+      margin: 0;
+    }
+  }
+}
+
+@media (max-width: 1199.98px) {
+  .kiss {
+    padding: 0;
+    padding-top: 33px;
+    &__footer {
+      width: 640px;
+    }
+  }
+}
+
+@media (max-width: 991.98px) {
+  .kiss {
+    height: 860px;
+    padding-top: 26px;
+    background-size: contain;
+    &__content {
+      width: 435px;
+      height: 262px;
+      margin-top: 20px;
+      margin-right: 0;
+      font-size: 16px;
+      line-height: 18px;
+    }
+    &__footer {
+      width: 470px;
+      margin-top: 10px;
+      font-size: 15px;
+      line-height: 16px;
+    }
+  }
+}
+
+@media (max-width: 767.98px) {
+  .kiss {
+    padding-left: 240px;
+    background-size: cover;
+    width: auto;
+    height: 800px;
+
+    // height: auto;
+    max-width: 100%;
+    margin: 0 20px;
+    padding-top: 22px;
+    &__content {
+      width: 100%;
+      min-width: 390px;
+      height: auto;
+      font-size: 18px;
+      line-height: 22px;
+      p:nth-child(2) {
+        display: none;
+      }
+    }
+    &__footer {
+      width: 100%;
+      min-width: 380px;
+      font-size: 18px;
+      line-height: 24px;
+    }
+  }
+}
+
+@media (max-width: 575.98px) {
+  .kiss {
+    height: 740px;
+    background-position: top;
+    background-size: 2000px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 60px;
+    &__content {
+      width: 100%;
+      min-width: auto;
+      margin-top: 0;
+      font-size: 16px;
+      line-height: 18px;
+    }
+    &__footer {
+      width: 100%;
+      min-width: auto;
+      margin-top: 0;
+      text-align: right;
+      font-size: 16px;
+      line-height: 18px;
+    }
+  }
+}

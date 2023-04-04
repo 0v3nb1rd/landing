@@ -1,0 +1,141 @@
+// USER VARIABLES SECTION
+$bodybg: #e63959; // background Color
+$textcolor: #fff; // Text Color
+$textaccent: #4c1358;
+$textlabel: #3554fb;
+
+$accent: #ff0; // Accent Color
+$fontsize: 16px; // Body Font Size
+$system: -apple-system, BlinkMacSystemFont, Arial, sans-serif; // System Font Family
+$roboto: Roboto, sans-serif; // Roboto Font Family
+
+// Bootstrap compatible gutter variable => $gutter
+$grid-gutter-width: 20px;
+$gutter: $grid-gutter-width;
+
+// IMPORT SECTION
+@import "node_modules/bootstrap/scss/bootstrap-reboot.scss"; // Bootstrap Reboot collection
+@import "node_modules/bootstrap/scss/mixins/_breakpoints.scss"; // Bootstrap Breakpoints mixin
+@import "node_modules/bootstrap/scss/bootstrap-grid.scss"; // Optional Bootstrap Grid\@import "node_modules/simple-lightbox/dist/simpleLightbox.min";
+@import "node_modules/simple-lightbox/dist/simpleLightbox.min"; // Simple-Lightbox
+// @import "node_modules/bootstrap/scss/buttons.scss"; // Bootstrap Buttons
+// @import 'node_modules/bootstrap/scss/utilities/_sizing.scss'; // Optional Bootstrap Utilites
+
+// FONTS LOAD SECTION
+
+@mixin font($fname, $fstyle, $fweight, $furl) {
+  @font-face {
+    font-family: $fname;
+    font-style: $fstyle;
+    font-weight: $fweight;
+    // font-display: swap; // Uncomment to initially display system fonts
+    src: local($fname), url($furl) format("woff2");
+  }
+}
+
+@include font("Roboto", normal, 400, "../fonts/roboto-regular-webfont.woff2");
+@include font("Roboto", italic, 400, "../fonts/roboto-italic-webfont.woff2");
+@include font("Roboto", normal, 700, "../fonts/roboto-bold-webfont.woff2");
+@include font(
+  "Roboto",
+  italic,
+  700,
+  "../fonts/roboto-bolditalic-webfont.woff2"
+);
+
+// GENERAL DOCUMENT STYLES
+
+::placeholder {
+  color: #666;
+}
+
+::selection {
+  background-color: $accent;
+  color: #fff;
+}
+
+input,
+textarea {
+  outline: none;
+  &:focus:required:invalid {
+    border-color: red;
+  }
+  &:required:valid {
+    border-color: green;
+  }
+}
+
+ul {
+  list-style-type: none;
+}
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  position: relative;
+  min-width: 375px;
+  color: $textcolor;
+  background: url(../images/dest/body.jpg) no-repeat center top;
+  background-color: $bodybg;
+  // font-family: $roboto;
+  font-family: Tahoma;
+  font-size: $fontsize;
+  line-height: 1.65;
+  overflow-x: hidden;
+}
+
+@media (max-width: 1199.98px) {
+  body {
+    background-size: 1400px;
+  }
+}
+@media (max-width: 991.98px) {
+  body {
+    background-size: 1100px;
+  }
+}
+@media (max-width: 767.98px) {
+  body {
+    background-size: 800px;
+  }
+}
+@media (max-width: 575.98px) {
+  body {
+    background-size: 2570px;
+    // background-size: cover;
+    // background-position: top center;
+    background-position: 47% 0;
+    // margin: 0 auto;
+  }
+}
+
+section {
+  margin-bottom: 50px;
+}
+.btn {
+  display: inline-block;
+  height: 50px;
+  width: 220px;
+  order: 1;
+  color: #fff;
+  background-color: #3ec300;
+  font-size: 28px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 50px;
+  text-decoration: none;
+  outline-width: medium;
+  border-right: medium none;
+  border-top: medium none;
+  border-left: medium none;
+  border-bottom: medium none;
+  border-radius: 25px;
+  transition: all 0.2s;
+  &:hover {
+    box-shadow: 0px 0px 50px 15px rgba(62, 195, 0, 1);
+  }
+}

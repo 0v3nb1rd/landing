@@ -1,0 +1,84 @@
+.call {
+  height: 350px;
+  background: url(../../images/dest/call.png) no-repeat 50% 0px;
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 180px;
+    padding-left: 120px;
+    padding-right: 120px;
+  }
+  &__item {
+    width: 180px;
+    margin: 5px 20px 10px;
+    text-align: center;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 18px;
+    line-height: 25px;
+    font-style: italic;
+  }
+}
+
+@media (max-width: 1199.98px) {
+  .call {
+    &__list {
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+  }
+}
+
+@media (max-width: 991.98px) {
+  .call {
+    height: 250px;
+    background-size: contain;
+    &__list {
+      padding-top: 130px;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+    &__item {
+      margin: 5px 30px 5px;
+      width: 150px;
+      font-size: 15px;
+      line-height: 20px;
+    }
+  }
+}
+
+@media (max-width: 767.98px) {
+  .call {
+    height: 180px;
+    &__list {
+      padding-top: 90px;
+    }
+    &__item {
+      margin: 5px 10px 5px;
+      width: 125px;
+      font-size: 12px;
+      line-height: 14px;
+    }
+  }
+}
+
+@media (max-width: 575.98px) {
+  .call {
+    height: 140px;
+    padding: 0;
+    background-size: 420px;
+    margin-bottom: 30px;
+    &__list {
+      padding: 0;
+      max-width: 375px;
+      margin: 0 auto;
+      padding-top: 70px;
+    }
+    &__item {
+      margin-top: 2px;
+      margin-bottom: 2px;
+      width: 75px;
+      font-size: 12px;
+      line-height: 12px;
+    }
+  }
+}
